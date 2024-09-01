@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>ShikshaSetu - The Best Educational Platform</title>
+    <meta
+      name="title"
+      content="ShikshaSetu - The Best Educational Platform"
+    />
+    <meta
+      name="description"
+      content="This is an education website made by ctrl+alt+defeat"
+    />
+
+    <!-- 
+    - favicon
+  -->
+
+
+
+
+    <link rel="shortcut icon" href="assets/updated_images/logo.png" type="image/png" />
+
+
+
+
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+
+
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/updated_images/hero1.jpg" />
+    <link rel="preload" as="image" href="./assets/updated_images/hero2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+ <header class="header" data-header>
+    <div class="container">
+      <a href="index.html#home" class="logo">
+        <img
+          src="./assets/updated_images/logohd.png"
+          width="162"
+          height="50"
+          alt="ShikshaSetu logo"
+        />
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <a href="index.html#home" class="logo">
+            <img
+              src="./assets/updated_images/logohd.png"
+              width="162"
+              height="50"
+              alt="ShishaSetu logo"
+            />
+          </a>
+
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="false"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html#category" class="navbar-link" data-nav-link>Dashboard</a>
+          </li>
+          <li class="navbar-item">
+            <a href="index.html#score" class="navbar-link" data-nav-link>Scoreboard</a>
+          </li>
+          <li class="navbar-item">
+            <a href="index.html#resources" class="navbar-link" data-nav-link>Resources</a>
+          </li>
+          <li class="navbar-item">
+            <a href="index.html#quizzes" class="navbar-link" data-nav-link>Quizzes</a>
+          </li>
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link" data-nav-link>About us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="header-action-btn"
+          aria-label="toggle search"
+          title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <!-- <a href="#" class="btn has-before">
+          <span class="span">Register/Login</span>
+
+          <ion-icon
+            name="arrow-forward-outline"
+            aria-hidden="true"
+          ></ion-icon>
+        </a> -->
+
+        <button
+          class="header-action-btn"
+          aria-label="open menu"
+          data-nav-toggler
+        >
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+    <!----------- SIDEBAR -------
+    -->
+
+    <div class="side-bar">
+      <div class="profile">
+        <img src="assets/updated_images/profile.jpg" class="image" alt="">
+        <h3 class="h3">Priya Anas</h3>
+        <p class="role">student</p>
+        <!-- <a href="profile.html" class="btn">view profile</a> -->
+         <div class="info">
+          <p>Email: abc@gmail.com</p>
+          <p>Class: 6th</p>
+          <p>Phone: 940297681</p>
+          <p>Attendance: 21%</p>
+          <p>Badges Owned: 3</p>
+          <p>Address: xyz Village</p>
+        </div>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Log Out</span>
+
+            <ion-icon
+              name="log-out-outline"
+              aria-hidden="true"
+              style="font-size: 25px;"
+            ></ion-icon>
+          </a>
+     </div>
+
+    </div>
+
+   <main>
+
+   <section class="section section-profile" id="profile" aria-label="profile">
+    <div class="container">
+      <p class="h2 section-title">Analysis</p>
+      <div class="analysis-card">
+        <ul class="grid-list">
+          <li>
+            <div class="course-card" style="--color: 351, 83%, 61%">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 400; --height: 340"
+              >
+                <img
+                  src="./assets/updated_images/donut.png"
+                  width="400"
+                  height="340"
+                  loading="lazy"
+                  alt=""
+                  style="width:100%; height: 100%;"
+                />
+
+              </figure>
+  
+               <div class="card-content">
+                
+  
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Current Attendance </a
+                  >
+                </h3>
+  
+  
+                
+  
+               
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="course-card" >
+              <figure
+                class="card-banner img-holder"
+                style="--width: 400; --height: 300"
+              >
+                <img
+                  src="./assets/updated_images/barchart.png"
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                  alt=""
+                  style="width:100%; height: 100%;"
+                />
+
+              </figure>
+  
+               <div class="card-content">
+                
+  
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Monthly Attendance Overview </a
+                  >
+                </h3>
+  
+  
+                
+  
+               
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="course-card" style="--color: 170, 75%, 41%;">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 450; --height: 380"
+              >
+                <img
+                  src="./assets/updated_images/line.png"
+                  width="450"
+                  height="380"
+                  loading="lazy"
+                  alt=""
+                  style="width:100%; height: 100%;"
+                />
+
+              </figure>
+  
+               <div class="card-content">
+                
+  
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Overall Performance </a
+                  >
+                </h3>
+  
+  
+                
+  
+               
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="course-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 400; --height: 340"
+              >
+                <img
+                  src="./assets/updated_images/warning.png"
+                  width="400"
+                  height="340"
+                  loading="lazy"
+                  alt=""
+                  style="width:100%; height: 100%;"
+                />
+
+              </figure>
+  
+               <div class="card-content">
+                
+  
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Assignment Status </a
+                  >
+                </h3>
+  
+  
+                
+  
+               
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="course-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 450; --height: 380"
+              >
+                <img
+                  src="./assets/updated_images/maths.png"
+                  width="450"
+                  height="380"
+                  loading="lazy"
+                  alt=""
+                  style="width:100%; height: 100%;"
+                />
+
+              </figure>
+  
+               <div class="card-content">
+                
+  
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Mathematics Performance </a
+                  >
+                </h3>
+  
+  
+                
+  
+               
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="course-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 450; --height: 420"
+              >
+                <img
+                  src="./assets/updated_images/science.png"
+                  width="450"
+                  height="420"
+                  loading="lazy"
+                  alt=""
+                  style="width:100%; height: 100%;"
+                />
+
+              </figure>
+  
+               <div class="card-content">
+                
+  
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Science Performance </a
+                  >
+                </h3>
+  
+  
+                
+  
+               
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="course-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 450; --height: 420"
+              >
+                <img
+                  src="./assets/updated_images/quiz.jpg"
+                  width="450"
+                  height="420"
+                  loading="lazy"
+                  alt=""
+                  style="width:100%; height: 100%;"
+                />
+
+              </figure>
+  
+               <div class="card-content">
+                
+  
+                <h3 class="h3">
+                  <a href="#" class="card-title"
+                    >Quiz Performance </a
+                  >
+                </h3>
+  
+  
+                
+  
+               
+              </div>
+            </div>
+          </li>
+      </div>
+
+    </div>
+    <!-- <div class="container">
+      <p class="section-subtitle">Popular Resources</p>
+
+      <h2 class="h2 section-title">Pick An Item To Get Started</h2>
+
+      <ul class="grid-list">
+        <li>
+          <div class="course-card">
+            <figure
+              class="card-banner img-holder"
+              style="--width: 370; --height: 220"
+            >
+              <img
+                src="./assets/updated_images/boardexam.jpg"
+                width="370"
+                height="220"
+                loading="lazy"
+                alt=""
+                class="img-cover"
+              />
+            </figure>
+
+            <!-- <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="span">3 Weeks</span>
+            </div> -->
+
+            <!-- <div class="card-content">
+              <span class="badge">Board Exams</span>
+
+              <h3 class="h3">
+                <a href="#" class="card-title"
+                  >Class 12 NCERT (ALL) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+                >
+              </h3>
+
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <p class="rating-text">(6.0/7 Rating)</p>
+              </div>
+
+              <data class="price" value="29">FREE!</data>
+
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon
+                    name="library-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">8 E-books</span>
+                </li>
+
+                <li class="card-meta-item">
+                  <ion-icon
+                    name="people-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">200+ Downloads</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure
+              class="card-banner img-holder"
+              style="--width: 370; --height: 220"
+            >
+              <img
+                src="./assets/updated_images/maths.jpg"
+                width="370"
+                height="220"
+                loading="lazy"
+                alt="Java Programming Masterclass for Software Developers"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="span">2 Weeks</span>
+            </div>
+
+            <div class="card-content">
+              <span class="badge">Easy</span>
+
+              <h3 class="h3">
+                <a href="#" class="card-title"
+                  >Class 10th Complete ONE-SHOT MATHS</a
+                >
+              </h3>
+
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <p class="rating-text">(6.9 /7 Rating)</p>
+              </div>
+
+              <data class="price" value="49">FREE!</data>
+
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon
+                    name="library-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">15 Lessons</span>
+                </li>
+
+                <li class="card-meta-item">
+                  <ion-icon
+                    name="people-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">35 Students</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="course-card">
+            <figure
+              class="card-banner img-holder"
+              style="--width: 370; --height: 220"
+            >
+              <img
+                src="./assets/updated_images/notes.jpg"
+                width="370"
+                height="220"
+                loading="lazy"
+                alt="The Complete Camtasia Course for Content Creators"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="abs-badge">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="span">Lifetime</span>
+            </div>
+
+            <div class="card-content">
+              <span class="badge">Notes</span>
+
+              <h3 class="h3">
+                <a href="#" class="card-title"
+                  >Complete Notes for All Subjects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&</a
+                >
+              </h3>
+
+              <div class="wrapper">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <p class="rating-text">(7 /7 Rating)</p>
+              </div>
+
+              <data class="price" value="35">FREE!</data>
+
+              <ul class="card-meta-list">
+                <li class="card-meta-item">
+                  <ion-icon
+                    name="library-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">1300+ Pages</span>
+                </li>
+
+                <li class="card-meta-item">
+                  <ion-icon
+                    name="people-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <span class="span">180+ Students</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <a href="#" class="btn has-before">
+        <span class="span">Browse more material</span>
+
+        <ion-icon
+          name="arrow-forward-outline"
+          aria-hidden="true"
+        ></ion-icon>
+      </a>
+    </div> --> 
+  </section>
+
+</main>
+
+
+ 
+  <!-- -----FOOTER -------
+   -->
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back top top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js"></script>
+
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
