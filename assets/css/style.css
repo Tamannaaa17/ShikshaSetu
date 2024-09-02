@@ -1451,17 +1451,18 @@ body {
   margin-top: 50px;
 
 }
-#resources {
+#resources, #chapters {
   padding: 20px;
+  background-color: var(--isabelline);
 }
 .resource {
-  background-color: #FFFFFF;
+  background-color: var(--white);
   top: 150px;
   margin: 20px 0;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #2E8B57;
+  border-left: 5px solid var(--kappel);
   transition: border-color 0.3s ease;
   position: relative;
 }
@@ -1470,18 +1471,17 @@ body {
   border-color: var(--radical-red);
 }
 
-.resource:nth-child(odd) {
-  background-color: #FAFAFA;
+/* .resource:nth-child(odd) {
   border-left: 5px solid #1E90FF;
 }
 
 .resource:nth-child(odd):hover {
   border-color:var(--radical-red);
-}
+} */
 .resource .heading {
-  color: #2E8B57;
+  color: var(--radical-red);
   text-align: left;
-  border-bottom: 2px solid #2E8B57;
+  border-bottom: 2px solid var(--radical-red);
   padding-bottom: 10px;
 }
 
@@ -1496,6 +1496,9 @@ body {
   max-width: 300px;
   text-align: center;
   transition: transform 0.3s ease;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .subject:hover {
@@ -1503,6 +1506,7 @@ body {
 }
 
 .book-cover {
+  display: block;
   width: 100px;
   height: 150px;
   align-items: center;
@@ -1513,8 +1517,93 @@ body {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+
 .book-cover:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transform: scale(1.05);
   
+}
+
+/* .container {
+  margin-top: 30px;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+} */
+
+.class-container {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.class-container h2 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--);
+  margin-bottom: 15px;
+}
+
+.subject-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.subject-list a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #004d40;
+  border: 2px solid #004d40;
+  padding: 15px 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s, border-color 0.3s;
+  flex: 1;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.subject-list a:hover {
+  background-color: #ffffff;
+  color: #004d40;
+  border-color: #004d40;
+}
+
+.quiz-container {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid #b2dfdb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-container.active {
+  display: flex;
+}
+
+.quiz-question {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #004d40;
+  width: 100%;
+}
+
+.quiz-option {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.quiz-option input[type="radio"] {
+  margin-right: 15px;
+  accent-color: #004d40; /* Modern radio button color */
 }
