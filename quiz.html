@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCERT Books - Resources</title>
+    <link rel="shortcut icon" href="assets/updated_images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+          <a href="index.html#home" class="logo">
+            <img
+              src="./assets/updated_images/logohd.png"
+              width="162"
+              height="50"
+              alt="ShikshaSetu logo"
+            />
+          </a>
+  
+          <nav class="navbar" data-navbar>
+            <div class="wrapper">
+              <a href="index.html#home" class="logo">
+                <img
+                  src="./assets/updated_images/logohd.png"
+                  width="162"
+                  height="50"
+                  alt="ShishaSetu logo"
+                />
+              </a>
+  
+              <button
+                class="nav-close-btn"
+                aria-label="close menu"
+                data-nav-toggler
+              >
+                <ion-icon name="close-outline" aria-hidden="false"></ion-icon>
+              </button>
+            </div>
+  
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="#class6" class="navbar-link" data-nav-link>Class 6</a>
+              </li>
+              
+              <li class="navbar-item">
+                <a href="#class7" class="navbar-link" data-nav-link>Class 7</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#class8" class="navbar-link" data-nav-link>Class 8</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#class9" class="navbar-link" data-nav-link>Class 9</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#class10" class="navbar-link" data-nav-link>Class 10</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#class11" class="navbar-link" data-nav-link>Class 11</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#class12" class="navbar-link" data-nav-link>Class 12</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="header-actions">
+            <button
+              class="header-action-btn"
+              aria-label="toggle search"
+              title="Search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+  
+            <a href="profile.html" class="logo">
+              <img
+                src="./assets/updated_images/profile.jpg"
+                class="nav-bar-profile"
+                alt="Profile Picture"
+              />
+            </a>
+  
+            <button
+              class="header-action-btn"
+              aria-label="open menu"
+              data-nav-toggler
+            >
+              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+  
+          <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+      </header>
+
+    <div class="container">
+        <!-- Class 6 -->
+        <div class="class-container">
+            <h2>Class 6</h2>
+            <div class="subject-list">
+                <!-- Add this button in the quiz-container and set it initially to be hidden -->
+                <button id="back-to-start" onclick="backToStart()" style="display:none;">Back to Start</button>
+
+                <a href="#" onclick="startQuiz('class6', 'mathematics')">Mathematics</a>
+                <a href="#" onclick="startQuiz('class6', 'science')">Science</a>
+                <a href="#" onclick="startQuiz('class6', 'english')">English</a>
+            </div>
+        </div>
+
+        <!-- Class 7 -->
+        <div class="class-container">
+            <h2>Class 7</h2>
+            <div class="subject-list">
+                <a href="#" onclick="startQuiz('class7', 'mathematics')">Mathematics</a>
+                <a href="#" onclick="startQuiz('class7', 'science')">Science</a>
+                <a href="#" onclick="startQuiz('class7', 'english')">English</a>
+            </div>
+        </div>
+
+        <!-- Class 8 -->
+        <div class="class-container">
+            <h2>Class 8</h2>
+            <div class="subject-list">
+                <a href="#" onclick="startQuiz('class8', 'mathematics')">Mathematics</a>
+                <a href="#" onclick="startQuiz('class8', 'science')">Science</a>
+                <a href="#" onclick="startQuiz('class8', 'english')">English</a>
+            </div>
+        </div>
+
+        <!-- Class 9 -->
+        <div class="class-container">
+            <h2>Class 9</h2>
+            <div class="subject-list">
+                <a href="#" onclick="startQuiz('class9', 'mathematics')">Mathematics</a>
+                <a href="#" onclick="startQuiz('class9', 'science')">Science</a>
+                <a href="#" onclick="startQuiz('class9', 'english')">English</a>
+            </div>
+        </div>
+
+        <!-- Class 10 -->
+        <div class="class-container">
+            <h2>Class 10</h2>
+            <div class="subject-list">
+                <a href="#" onclick="startQuiz('class10', 'mathematics')">Mathematics</a>
+                <a href="#" onclick="startQuiz('class10', 'science')">Science</a>
+                <a href="#" onclick="startQuiz('class10', 'english')">English</a>
+            </div>
+        </div>
+
+        <!-- Class 11 -->
+        <div class="class-container">
+            <h2>Class 11</h2>
+            <div class="subject-list">
+                <a href="#" onclick="startQuiz('class11', 'mathematics')">Mathematics</a>
+                <a href="#" onclick="startQuiz('class11', 'physics')">Physics</a>
+                <a href="#" onclick="startQuiz('class11', 'chemistry')">Chemistry</a>
+                <a href="#" onclick="startQuiz('class11', 'biology')">Biology</a>
+            </div>
+        </div>
+
+        <!-- Class 12 -->
+        <div class="class-container">
+            <h2>Class 12</h2>
+            <div class="subject-list">
+                <a href="#" onclick="startQuiz('class12', 'mathematics')">Mathematics</a>
+                <a href="#" onclick="startQuiz('class12', 'physics')">Physics</a>
+                <a href="#" onclick="startQuiz('class12', 'chemistry')">Chemistry</a>
+                <a href="#" onclick="startQuiz('class12', 'biology')">Biology</a>
+            </div>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" class="quiz-container">
+            <div id="quiz-content"></div>
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
